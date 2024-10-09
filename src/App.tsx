@@ -1,22 +1,22 @@
 import React from "react";
-import Row from "./Row";
+// import Row from "./Row";
 import Square from "./Square";
 
 const App: React.FC = () => {
   // Example data for rows
-  const periodicTableData = [
-    [
-      { symbol: "H", name: "Hydrogen", number: 1 },
-      { symbol: "He", name: "Helium", number: 2 },
-    ],
-    [
-      { symbol: "Li", name: "Lithium", number: 3 },
-      { symbol: "Be", name: "Beryllium", number: 4 },
-      { symbol: "B", name: "Boron", number: 5 },
-      { symbol: "C", name: "Carbon", number: 6 },
-    ],
-    // More rows...
-  ];
+  // const periodicTableData = [
+  //   [
+  //     { symbol: "H", name: "Hydrogen", number: 1 },
+  //     { symbol: "He", name: "Helium", number: 2 },
+  //   ],
+  //   [
+  //     { symbol: "Li", name: "Lithium", number: 3 },
+  //     { symbol: "Be", name: "Beryllium", number: 4 },
+  //     { symbol: "B", name: "Boron", number: 5 },
+  //     { symbol: "C", name: "Carbon", number: 6 },
+  //   ],
+  //   // More rows...
+  // ];
 
   return (
     <>
