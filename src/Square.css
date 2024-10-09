@@ -1,0 +1,62 @@
+@keyframes blink{
+    0%{
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+        color: #ff5900;
+    text-shadow: 0 0 15px #f4940d;
+    }
+
+    15%{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+        color: black;
+        text-shadow: none;
+    }
+
+    30%{
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+        color: #ff5900;
+    text-shadow: 0 0 15px #f4940d;
+    }
+
+    65%{
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+        color: black;
+        text-shadow: none;
+    }
+
+    75%{
+        color: #ff5900;
+    text-shadow: 0 0 15px #f4940d;
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+    }
+
+    85%{
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+        color: black;
+        text-shadow: none;
+    }
+
+    100%{
+        box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+        color: #ff5900;
+    text-shadow: 0 0 15px #f4940d;
+    }
+}
+
+.square:hover{
+    box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+    color: #ff5900;
+    text-shadow: 0 0 15px #f4940d;
+}
+
+.square:not(:hover) {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    color: black;
+    transition: box-shadow 2s ease, color 2s ease;
+}
+
+.blinking{
+    color:#ff5900;
+    box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
+    text-shadow: 0 0 15px #f4940d;
+    animation: blink 1s;
+}

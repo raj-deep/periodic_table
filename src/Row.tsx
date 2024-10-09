@@ -1,35 +1,33 @@
 import React from "react";
 import Square from "./Square";
 
-interface RowProps {
-  elements: {
-    symbol: string;
-    name: string;
-    number: number;
-  }[];
+interface Element {
+  symbol: string;
+  name: string;
+  number: number;
+  className: string;
 }
 
-const Row: React.FC<RowProps> = ({ elements }) => {
+interface RowProps {
+  elements: Element[]; // Array of elements
+  isPressed: boolean; // Single boolean
+}
+
+const Row: React.FC<RowProps> = ({ elements, isPressed }) => {
   return (
-    <div style={styles.row}>
+    <div className="flex flex-wrap justify-between w-full mt-1">
       {elements.map((element) => (
         <Square
           key={element.number}
           symbol={element.symbol}
           name={element.name}
-          className=""
+          className={element.className}
           number={element.number}
+          isPressed={isPressed} // Pass the isPressed prop directly
         />
       ))}
     </div>
   );
-};
-
-const styles = {
-  row: {
-    display: "flex",
-    justifyContent: "center",
-  },
 };
 
 export default Row;
