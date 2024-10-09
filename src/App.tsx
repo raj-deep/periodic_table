@@ -32,7 +32,7 @@ const App: React.FC = () => {
           className="lightOn text-white border border-red-400 border-solid absolute top-50 left-0 hover:pointer"
           onClick={handleClick}
         >
-          Press me
+          Lights On
         </button>
         <div className="text-white">Periodic Table</div>
         <div className="text-white">Move your mouse and find the elements</div>
