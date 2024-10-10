@@ -4,8 +4,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 4rem;
+  height: 2.1rem;
 }
 
 /* Hide the default HTML checkbox */
@@ -34,10 +34,12 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 3px;
+  height: 1.6rem;
+  width: 1.6rem;
+  left: 0.3rem;
+  /* bottom: 3px; */
+  top: 0.1rem;
+  right: 1.7rem;
   background-color: white;
   box-shadow: 0 0 2px #050000, 0 0 10px #e0e0e0;
   transition: 0.4s;
@@ -53,7 +55,7 @@ input:checked + .slider {
 
 /* Move the slider when the checkbox is checked */
 input:checked + .slider:before {
-  transform: translateX(23px);
+  transform: translateX(1.5rem);
 }
 
 .background-layer {
