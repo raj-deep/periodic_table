@@ -5,7 +5,7 @@ import { periodicTableData } from "./periodicTable";
 import "./App.css";
 
 const App: React.FC = () => {
-  const [lightOn, setLightOn] = useState(false);
+  const [lightOn, setLightOn] = useState(true);
 
   const handleClick = () => {
     setLightOn(!lightOn);

@@ -3,11 +3,13 @@
         box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
         border: 1px solid white;
         color: #ff5900;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.226);
     }
 
     15%{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+        background-color: transparent;
         border: 1px solid transparent;
         color: transparent;
         text-shadow: none;
@@ -17,11 +19,13 @@
         box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
         border: 1px solid white;
         color: #ff5900;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.226);
     }
 
     65%{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+        background-color: transparent;
         border: 1px solid transparent;
         color: transparent;
         text-shadow: none;
@@ -29,13 +33,15 @@
 
     75%{
         color: #ff5900;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.226);
     box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
     border: 1px solid white;
     }
 
     85%{
         box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+        background-color: transparent;
         border: 1px solid transparent;
         color: transparent;
         text-shadow: none;
@@ -45,7 +51,8 @@
         box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
         border: 1px solid white;
         color: #ff5900;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.226);
     }
 }
 
@@ -53,24 +60,32 @@
     box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
     border: 1px solid white;
     color: #ff5900;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    background-color: rgba(255, 255, 255, 0.226);
 }
 
 .square:not(:hover) {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+    background-color: transparent;
     border: 1px solid transparent;
+    text-shadow: none;
     color: transparent;
-    transition: box-shadow 2s ease, color 2s ease;
+    transition: box-shadow 2s ease, color 2s ease, background-color 2s ease, text-shadow 2s ease;
 }
 
 .blinking{
     color:#ff5900;
     box-shadow: 0 0 5px #f9f9f9, 0 0 15px #00e5ff, 0 0 25px #0026ff;
-    text-shadow: 0 0 15px #f4940d;
+    text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     animation: blink 1s;
     border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.226);
 }
 
+.blinking:hover{
+    scale: 1.1;
+    text-shadow: 0 0 2px #ff5900, 0 0 5px black, 0 0 8px red;
+}
 .square, .blinking{
     width: calc(84vw/18);
 }
