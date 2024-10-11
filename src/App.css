@@ -1,5 +1,5 @@
 .container{
-  width: 84vw !important;
+  max-width: 84vw !important;
 }
 .switch {
   position: relative;
