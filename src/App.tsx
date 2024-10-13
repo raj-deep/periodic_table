@@ -15,7 +15,7 @@ const App: React.FC = () => {
     <>
       <div>
         <div className="background-layer"></div>
-        <nav className="h-20 mt-2 flex flex-col justify-center items-center">
+        <nav className="h-[9vh] mt-2 flex flex-col justify-center items-center">
           <div className="absolute left-5">
             <label className="switch">
               <input type="checkbox" onChange={handleClick} />

@@ -87,5 +87,5 @@
     text-shadow: 0 0 2px #ff5900, 0 0 5px black, 0 0 8px red;
 }
 .square, .blinking{
-    width: calc(84vw/18);
+   width: calc(84vw/18) !important;
 }
